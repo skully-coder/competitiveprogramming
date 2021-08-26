@@ -33,5 +33,5 @@ Output: false
 ```
 ### Constraints:
 
-- 1 <= preorder.length <= 104
+- 1 <= preorder.length <= 10<sup>4</sup>
 - preoder consist of integers in the range [0, 100] and '#' separated by commas `','`.
