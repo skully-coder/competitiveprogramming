@@ -3,30 +3,43 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<string> generateParenthesis(int n)
+class Solution
 {
+public:
     vector<string> ans;
-    if (n == 0)
+    vector<string> generateParenthesis(int n)
     {
-        ans.push_back("");
+        backtrack("", 0, 0, n);
+        return ans;
     }
-    else
+
+    void backtrack(string cur, int open, int close, int max)
     {
-        for (int c = 0; c < n; ++c)
-            for (auto left : generateParenthesis(c))
-                for (auto right : generateParenthesis(n - 1 - c))
-                    ans.push_back("(" + left + ")" + right);
+        if (cur.length() == max * 2)
+        {
+
+            ans.push_back(cur);
+            return;
+        }
+
+        if (open < max)
+        {
+            backtrack(cur + "(", open + 1, close, max);
+        }
+        if (close < open)
+        {
+            backtrack(cur + ")", open, close + 1, max);
+        }
     }
-    return ans;
-}
+};
 
 int main()
 {
-    int n;
-    cin >> n;
-    vector<string> ans = generateParenthesis(n);
+    Solution s;
+    vector<string> ans = s.generateParenthesis(3);
     for (auto x : ans)
+    {
         cout << x << endl;
+    }
     return 0;
 }
-
