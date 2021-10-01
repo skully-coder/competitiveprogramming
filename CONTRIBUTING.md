@@ -26,6 +26,6 @@ To contribute to this repository:
 
 - Once you are done, `commit` the changes and `push` to your fork. 
 
-- Now go ahead open a pull request with an appropriate heading, which will be reviewed by us as soon as possible. If acceptable, your pull request will be merged into the repository, and you will be able to se your name in the list of contributors [here](https://github.com/skully-coder/competitiveprogramming/graphs/contributors)
+- Now go ahead create a pull request with an appropriate heading, which will be reviewed by us as soon as possible. If acceptable, your pull request will be merged into the repository, and you will be able to se your name in the list of contributors [here](https://github.com/skully-coder/competitiveprogramming/graphs/contributors)
 
 - If you like this repo, do ⭐**star** it, and let others know about this repository :)
