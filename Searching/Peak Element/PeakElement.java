@@ -1,6 +1,12 @@
+import java.util.*;
 public class PeakElement {
     public static void main(String[] args) {
-        int[] arr = { 5, 10, 15, 53, 23 };
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scan.nextInt();
+        }
         System.out.println(peak(arr, 0, arr.length - 1));
     }
 
