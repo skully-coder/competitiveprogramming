@@ -43,10 +43,13 @@ long long getMaxArea(long long arr[], long long n)
 int main()
 {
     
-    long long arr[] = {6,2,5,4,5,1,6} ;
-    long long n = sizeof(arr)/sizeof(long long);
-	  long long ans=getMaxArea(arr,n);
-	  cout<<ans;
+   long long n;
+   cin>>n;
+   long long arr[n];
+   for(long long i=0;i<n;i++)
+      cin>>arr[i];
+   long long ans=getMaxArea(arr,n);
+	cout<<ans;
  
     return 0;
 }
