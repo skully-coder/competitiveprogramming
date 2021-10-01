@@ -15,3 +15,8 @@ To contribute to this repository:
 - Also provide a solution file in as many programming languages as possible.
 - After pushing to your fork, create a pull request with an appropriate heading, which will be reviewed as soon as possible.
 - If you like this repo, do *star* it :)
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/skully-coder/competitiveprogramming.svg)](https://starchart.cc/skully-coder/competitiveprogramming)
