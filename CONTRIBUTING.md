@@ -1,4 +1,4 @@
-# Guidelines-for-Contributing 
+# Guidelines for Contributing 
 
 To contribute to this repository: 
 

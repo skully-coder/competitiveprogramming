@@ -6,7 +6,7 @@ This repository contains solutions and explanations to various competitive progr
 
 Anyone is free to contribute to this repo, please follow the contribution guidelines below 👇
 
-# Guidelines-for-Contributing 
+# Guidelines for Contributing 
 
 To contribute to this repository: 
 
