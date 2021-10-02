@@ -14,7 +14,6 @@ using std::endl;
 
 
 string reversal(string input){
-    
     if (input == "")
     {
         return "";
