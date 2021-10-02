@@ -1,5 +1,6 @@
 import java.util.*;
-   class TreeNode {
+public class SolutionSymmetric{
+  public static class TreeNode {
      int val;
      TreeNode left;
      TreeNode right;
@@ -10,9 +11,10 @@ import java.util.*;
          this.left = left;
          this.right = right;
     }
- }
+}
  
-class SolutionSymmetric {
+ 
+public static class Solution {
 	TreeNode root;
     public boolean mirror(TreeNode n1,TreeNode n2){
         if(n1==null && n2==null){
@@ -32,10 +34,10 @@ class SolutionSymmetric {
     return mirror(root.left,root.right);
 
     }
-
+}
 public static void main(String args[])  
     { 
-        SolutionSymmetric tree = new SolutionSymmetric(); 
+        Solution tree = new Solution(); 
         tree.root = new TreeNode(1); 
         tree.root.left = new TreeNode(2); 
         tree.root.right = new TreeNode(2); 
@@ -50,4 +52,5 @@ public static void main(String args[])
             System.out.println(" NOT SYMMETRIC"); 
     } 
  
+
 }
