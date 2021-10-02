@@ -3,7 +3,6 @@
 using namespace std;
 bool arr[123];
 string pangrams(string s) {
-    
     int a,counter; string q=""; counter=0;
     for(int i=0; i<s.size(); i++)
     {
@@ -27,12 +26,10 @@ string pangrams(string s) {
             return "pangram";
         }
     } return "not pangram";
-
 }
 
 int main()
 {
-   
     string s;
     getline(cin, s);
 
