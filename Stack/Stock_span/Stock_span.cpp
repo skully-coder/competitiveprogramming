@@ -1,17 +1,8 @@
 #include<bits/stdc++.h>
 #define deb(x) cout << #x << "=" << x << endl
 using namespace std;
-
-
-
-
-
-
 class Solution
-{
-  
-    
-    
+{  
     public:
     //Function to calculate the span of stockâ€™s price for all n days.
     vector <int> calculateSpan(int price[], int n)
@@ -36,8 +27,6 @@ class Solution
         return v;  
     }
 };
-
-
 
 int main()
 {
