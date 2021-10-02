@@ -15,7 +15,6 @@ int binary_search(int *p, int n, int r, int m){
 	}
 	cout<<q<<endl;
 	return -1;
-
 }
 
 
