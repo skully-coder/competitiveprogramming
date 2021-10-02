@@ -37,4 +37,3 @@ if pallindrome(head) :
     print("Linked list is a Pallindrome")
 else:
     print("Not a Pallindrome")
-
