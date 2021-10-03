@@ -26,12 +26,10 @@ vector<int> find_anagrams(string a,string b)
         hash_for_b[b[i]-'a']++; //storing the characters that appear in String B
         hash_for_a[a[i]-'a']++; //Stroring the first m characters of String A
     }   
-
     if(hash_for_a==hash_for_b)
     {
         start_index.push_back(0);
     }
-
     for(int i=m;i<n;i++)
     {
         hash_for_a[a[i]-'a']++;
