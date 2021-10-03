@@ -19,8 +19,8 @@ To contribute to this repository:
     git clone https://github.com/skully-coder/competitiveprogramming
     ```
 
-- In the new forked repository created, create a folder with name of the problem under the most suitable topic/tag of the program, like this example:
-![alt text](https://cdn.discordapp.com/attachments/893592024320716842/893592160975343646/unknown.png)
+- In the new forked repository created, create a folder with name of the problem under the most suitable topic/tag of the program, like this example:  
+![alt text](https://cdn.discordapp.com/attachments/893592024320716842/893592160975343646/unknown.png)  
 *(here, **Graph** is the suitable folder, and **Krushal's Minimum Spanning Tree Algorithm** is a folder with the name of the problem)*
 
 - In the folder, provide the following:-
