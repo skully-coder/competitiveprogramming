@@ -41,7 +41,6 @@ void printKMax(int arr[], int n, int k)
 
 int main()
 {
-
     int t;
     cin >> t;
     while (t > 0)
