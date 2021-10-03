@@ -15,19 +15,15 @@ class Solution
         {
             while((!s1.empty()) && (price[s1.top()] <= price[i]))
                s1.pop();
-
             if(s1.empty())
-            v[i] = i+1;
+              v[i] = i+1;
             else
-            v[i] = i - s1.top(); 
-        
+              v[i] = i - s1.top(); 
             s1.push(i);
-
         }  
         return v;  
     }
 };
-
 int main()
 {
 	int t;
@@ -43,7 +39,6 @@ int main()
 		}
 		Solution obj;
 		vector <int> s = obj.calculateSpan(a, n);
-		
 		for(i=0;i<n;i++)
 		{
 			cout<<s[i]<<" ";
@@ -52,4 +47,3 @@ int main()
 	}
 	return 0;
 }
-  

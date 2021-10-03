@@ -26,13 +26,10 @@ string pangrams(string s) {
         }
     } return "not pangram";
 }
-
 int main()
 {
     string s;
     getline(cin, s);
-
     string result = pangrams(s);
-
     cout<<result<<endl;
 }
