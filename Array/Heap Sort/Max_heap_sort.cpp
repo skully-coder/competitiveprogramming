@@ -1,7 +1,7 @@
 // Author : Aarti Rathi
 
 /*Problem Statement : 
-Implement Heap sort to sort given set of values using max or min heap.*/
+Implement Heap sort to sort given set of values using max heap*/
 
 #include <bits/stdc++.h> 
 using namespace std; 
