@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 bool arr[123];
 string pangrams(string s) {
@@ -27,7 +26,6 @@ string pangrams(string s) {
         }
     } return "not pangram";
 }
-
 int main()
 {
     string s;
@@ -37,4 +35,3 @@ int main()
 
     cout<<result<<endl;
 }
-
