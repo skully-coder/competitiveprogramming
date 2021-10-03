@@ -40,60 +40,60 @@ If the input option is Q, then print “End”, and terminate the program.<br/>
 
 ### Sample Input 0
 
-A 4
-E 10
-E 20
-E 30
-E 40
-E 50
-P
-S
-D
-D
-D
-D
-D
-Q
+A 4<br/>
+E 10<br/>
+E 20<br/>
+E 30<br/>
+E 40<br/>
+E 50<br/>
+P<br/>
+S<br/>
+D<br/>
+D<br/>
+D<br/>
+D<br/>
+D<br/>
+Q<br/>
 
 
 ### Sample Output 0
 
-QueueFull
-10 20 30 40
-4
-10
-20
-30
-40
-EmptyQueue
-End
+QueueFull<br/>
+10 20 30 40<br/>
+4<br/>
+10<br/>
+20<br/>
+30<br/>
+40<br/>
+EmptyQueue<br/>
+End<br/>
 
 
 ### Sample Input 1
 
-L
-P
-E 5
-E 4
-E 6
-D
-P
-S
-Q
+L<br/>
+P<br/>
+E 5<br/>
+E 4<br/>
+E 6<br/>
+D<br/>
+P<br/>
+S<br/>
+Q<br/>
 
 
 ### Sample Output 1
 
-EmptyQueue
-5
-4 6
-2
-End
+EmptyQueue<br/>
+5<br/>
+4 6<br/>
+2<br/>
+End<br/>
 
 ### Sample Input 2
 
-A -10
+A -10<br/>
 
 ### Sample Output 2
 
-InvalidSIZE
+InvalidSIZE<br/>
