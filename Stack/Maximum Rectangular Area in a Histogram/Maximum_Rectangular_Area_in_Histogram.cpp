@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
 long long getMaxArea(long long arr[], long long n)
     {
         vector <long long> left(n),right(n);
@@ -42,7 +41,6 @@ long long getMaxArea(long long arr[], long long n)
     }
 int main()
 {
-    
    long long n;
    cin>>n;
    long long arr[n];
@@ -50,6 +48,5 @@ int main()
       cin>>arr[i];
    long long ans=getMaxArea(arr,n);
 	cout<<ans;
- 
     return 0;
 }

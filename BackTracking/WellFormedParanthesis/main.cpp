@@ -2,7 +2,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-
 class Solution
 {
 public:
@@ -12,16 +11,13 @@ public:
         backtrack("", 0, 0, n);
         return ans;
     }
-
     void backtrack(string cur, int open, int close, int max)
     {
         if (cur.length() == max * 2)
         {
-
             ans.push_back(cur);
             return;
         }
-
         if (open < max)
         {
             backtrack(cur + "(", open + 1, close, max);
@@ -32,7 +28,6 @@ public:
         }
     }
 };
-
 int main()
 {
     Solution s;
