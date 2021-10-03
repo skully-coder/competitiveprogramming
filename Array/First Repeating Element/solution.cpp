@@ -2,7 +2,6 @@
 using namespace std;
 int main()
 {
-  
   int n; // declare the number of elements
   cin>>n;
   int arr[n];
