@@ -85,7 +85,6 @@ void levelorder(dll *root) //Print the node in levelorder form
            p.push(q->right); 
        p.pop(); 
        count--; 
-
    } 
 } 
 
@@ -113,7 +112,6 @@ void NRpreorder(dll *root) //Iterative Preorder
        root=s.top(); 
        s.pop(); 
        root=root->right; 
-
    } 
 } 
 
@@ -255,7 +253,6 @@ bool search(dll *root,int x) //Search an element in BST
    } 
    cout<<"ELEMENT NOT FOUND :( \n" ; 
    return false; 
-
 } 
 
 dll *bstdelete(dll *root, int x) //Delete the node from BST
@@ -373,7 +370,6 @@ void par_chld(dll *root) //Print all parents and their Children
        } 
        p.pop(); 
        cout<<"\n"; 
-
    } 
 } 
 
