@@ -7,6 +7,7 @@ import 'halfmoon/css/halfmoon.css'
 import halfmoon from 'halfmoon/js/halfmoon-module'
 import Home from './Home';
 import Categories from './Categories';
+import Issues from './Issues';
 
 export default function App() {
 	const [ categories, setCategories ] = useState([])
@@ -45,9 +46,12 @@ export default function App() {
 						<FontAwesomeIcon icon={faLaptopCode} />&nbsp;
 						CP
 					</NavLink>
-					<div className="navbar-nav">
+					<div className="navbar-nav font-size-18">
 						<NavLink activeClassName="active" className="nav-item" to="/categories/">
 							<span className="nav-link">Categories</span>
+						</NavLink>
+						<NavLink activeClassName="active" className="nav-item" to="/issues/">
+							<span className="nav-link">Issues</span>
 						</NavLink>
 					</div>
 					<div className="navbar-content ml-auto">
@@ -63,6 +67,9 @@ export default function App() {
 					<Switch>
 						<Route path="/categories/">
 							<Categories categories={categories} setUrl={setUrl} />
+						</Route>
+						<Route path="/issues/">
+							<Issues />
 						</Route>
 						<Route path="/">
 							<Home />

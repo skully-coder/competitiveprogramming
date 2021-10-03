@@ -1,14 +1,17 @@
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route, NavLink, useLocation } from "react-router-dom";
 import Category from "./Category";
 
 export default function Categories(props) {
+	const location = useLocation().pathname.split("/")						// Set 'cat'(category) as currently selected
+	const [ cat, setCat ] = useState(location[location.length - 1])			// category according to URL incase of refresh
 	return (
 		<Router>
 			<div className="row h-md-full">
-				<div className="col-2 d-none d-md-flex flex-md-column h-md-full">
+				<div className="col-2 d-none d-md-flex flex-md-column h-md-full font-size-16">
 					{props.categories.map((category, index) =>
 						<div className={"flex-fill text-center border" + (index%2 ? " bg-light-lm bg-dark-dm" : "")} key={index}>
-							<NavLink activeClassName="active" className="nav-link" to={"/categories/" + category}>{category}</NavLink>
+							<NavLink className={"nav-link " + (cat === category ? "text-primary" : "")} to={"/categories/" + category} onClick={() => setCat(category)}>{category}</NavLink>
 						</div>
 					)}
 				</div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function Category(props) {
 	const [ problems, setProblems ] = useState([])
@@ -43,7 +43,7 @@ function Problem(props) {
 					<FontAwesomeIcon icon={faCode} />
 				</button>
 				</td>
-			<td><a target="_blank" rel="noreferrer" className="btn btn-secondary" href={"https://github.com/skully-coder/competitiveprogramming/blob/main/" + props.category + "/" + props.problem.name + "/main.cpp"}><FontAwesomeIcon icon={faLink} /></a></td>
+			<td><a target="_blank" rel="noreferrer" className="btn btn-secondary" href={"https://github.com/skully-coder/competitiveprogramming/blob/main/" + props.category + "/" + props.problem.name + "/main.cpp"}><FontAwesomeIcon icon={faExternalLinkAlt} /></a></td>
 		</tr>
 	)
 }
