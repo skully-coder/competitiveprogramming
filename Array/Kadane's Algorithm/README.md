@@ -2,7 +2,6 @@ Kadane's Algorithm
 Medium Accuracy: 51.0% Submissions: 100k+ Points: 4
 Given an array Arr[] of N integers. Find the contiguous sub-array(containing at least one number) which has the maximum sum and return its sum.
 
-
 Example 1:
 
 Input:
@@ -28,10 +27,8 @@ of element (-1)
 Your Task:
 You don't need to read input or print anything. The task is to complete the function maxSubarraySum() which takes Arr[] and N as input parameters and returns the sum of subarray with maximum sum.
 
-
 Expected Time Complexity: O(N)
 Expected Auxiliary Space: O(1)
-
 
 Constraints:
 1 ≤ N ≤ 106
