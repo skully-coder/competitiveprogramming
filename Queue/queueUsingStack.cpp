@@ -1,10 +1,6 @@
 class MyQueue {
     stack<int> input, output;
 public:
-    MyQueue() {
-        
-    }
-    
     void push(int x) {
         input.push(x);
     }
