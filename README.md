@@ -10,9 +10,9 @@ Anyone is free to contribute to this repo, please follow the contribution guidel
 
 To contribute to this repository: 
 
-- look through the [issues](https://github.com/skully-coder/competitiveprogramming/issues) tab and find an issue that you feel you can contribute to.
+- Look through the [issues](https://github.com/skully-coder/competitiveprogramming/issues) tab and find an issue that you feel you can contribute to.
 
-- comment on the issue of your choice, and make sure that the issue is assigned to you
+- Comment on the issue of your choice, and make sure that the issue is assigned to you
 
 - Fork this repository.
     ```sh
