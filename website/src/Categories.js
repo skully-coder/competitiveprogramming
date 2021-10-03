@@ -14,7 +14,7 @@ export default function Categories(props) {
 				</div>
 				<div className="col-12 d-md-none text-center py-10">
 					<div className="dropdown">
-						<button className="btn" data-toggle="dropdown" type="button" id="dropdown-categories" aria-haspopup="true" aria-expanded="false">
+						<button className="btn btn-success" data-toggle="dropdown" type="button" id="dropdown-categories" aria-haspopup="true" aria-expanded="false">
 							View Categories
 						</button>
 						<div className="dropdown-menu dropdown-menu-center" aria-labelledby="dropdown-categories">
