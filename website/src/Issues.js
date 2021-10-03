@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTag, faExternalLinkAlt, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLinkAlt, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+
 export default function Issues() {
 	const [ issues, setIssues ] = useState([])
 	useEffect(() => {
@@ -10,21 +11,7 @@ export default function Issues() {
 				if(!('pull_request' in issue)) {
 					let labels = []
 					issue.labels.forEach(label => {
-						switch(label.name) {
-							case "good first issue":
-								labels.push(0)
-								break
-							case "needs-fixing":
-								labels.push(1)
-								break
-							case "help wanted":
-								labels.push(2)
-								break
-							case "enhancement":
-								labels.push(3)
-								break
-							default:
-						}
+						labels.push(label.name)
 					})
 					setIssues(issues => issues.concat({
 						title: issue.title,
@@ -38,30 +25,14 @@ export default function Issues() {
 	}, [])
 	return (
 		<div className="card shadow-lg">
-			<h4>
-				<div className="row text-center">
-					<div className="col-12 col-md-3 text-primary font-weight-semi-bold">
-						Good First Issue <FontAwesomeIcon icon={faTag} />
-					</div>
-					<div className="col-12 col-md-3 text-secondary font-weight-semi-bold">
-						Needs Fixing <FontAwesomeIcon icon={faTag} />
-					</div>
-					<div className="col-12 col-md-3 text-danger font-weight-semi-bold">
-						Help Wanted <FontAwesomeIcon icon={faTag} />
-					</div>
-					<div className="col-12 col-md-3 text-success font-weight-semi-bold">
-						Enhancement <FontAwesomeIcon icon={faTag} />
-					</div>
-				</div>
-			</h4>
-			<div className="table-responsive overflow-auto border" style={{ maxHeight: "60vh" }}>
+			<div className="overflow-auto border" style={{ maxHeight: "70vh" }}>
 				<table className="table table-bordered table-hover">
 					<thead className="position-sticky top-0 bg-dark-lm bg-light-dm text-white-lm text-dark-dm">
 						<tr>
-							<th>Title</th>
-							<th>Labels</th>
-							<th>Assigned?</th>
-							<th>Link</th>
+							<th style={{ width: "70%" }}>Title</th>
+							<th style={{ width: "20%" }}>Labels</th>
+							<th style={{ width: "5%" }}>Assigned?</th>
+							<th style={{ width: "5%" }}>Link</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -74,11 +45,16 @@ export default function Issues() {
 }
 
 function Issue(props) {
-	const labelColors = [ "text-primary", "text-secondary", "text-danger", "text-success" ]
+	const labelColors = {
+		"good first issue": "badge-primary",
+		"needs-fixing": "badge-secondary",
+		"help wanted": "badge-danger",
+		"enhancement": "badge-success",
+	}
 	return (
 		<tr>
 			<td>{props.issue.title}</td>
-			<td>{props.issue.labels.map((label , index) => <span key={index} className={"font-size-18 " + labelColors[label]}><FontAwesomeIcon icon={faTag} /> </span>)}</td>
+			<td>{props.issue.labels.map((label , index) => <span key={index} className={"badge badge-pill m-5 " + labelColors[label]}>{label}</span>)}</td>
 			<td className="font-size-18 text-extra-letter-spacing">{props.issue.assigned ?
 				<b className="text-success"><FontAwesomeIcon icon={faCheck} /></b> :
 				<b className="text-danger"><FontAwesomeIcon icon={faTimes} /></b>

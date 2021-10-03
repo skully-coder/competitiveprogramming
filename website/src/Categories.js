@@ -30,7 +30,7 @@ export default function Categories(props) {
 				<Switch className="col-12 col-md-10">
 					{props.categories.map((category, index) =>
 						<Route path={"/categories/" + category} key={index}>
-							<Category category={category} setUrl={props.setUrl} />
+							<Category category={category} showCode={props.showCode} />
 						</Route>
 					)}
 				</Switch>

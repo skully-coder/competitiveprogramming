@@ -23,7 +23,7 @@ export default function Category(props) {
 						</tr>
 					</thead>
 					<tbody>
-						{problems.map((problem, index) => <Problem key={index} problem={problem} category={props.category} setUrl={props.setUrl} />)}
+						{problems.map((problem, index) => <Problem key={index} problem={problem} category={props.category} showCode={props.showCode} />)}
 					</tbody>
 				</table>
 			</div>
@@ -32,14 +32,11 @@ export default function Category(props) {
 }
 
 function Problem(props) {
-	const handleClick = () => {
-		props.setUrl("https://cdn.rawgit.com/skully-coder/competitiveprogramming/main/" + props.category + "/" + props.problem.name + "/main.cpp")
-	}
 	return (
 		<tr>
 			<td>{props.problem.name}</td>
 			<td>
-				<button className="btn btn-primary" onClick={handleClick} data-toggle="modal" data-target="source-code">
+				<button className="btn btn-primary" onClick={() => props.showCode("https://api.github.com/repos/skully-coder/competitiveprogramming/contents/" + props.category + "/" + props.problem.name + "/main.cpp")} data-toggle="modal" data-target="source-code">
 					<FontAwesomeIcon icon={faCode} />
 				</button>
 				</td>

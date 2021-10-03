@@ -59,3 +59,7 @@ h1 {
 .dark-mode h1 {
   text-shadow: 1px 1px #25282c, 2px 2px rgb(150, 150, 150) !important;
 }
+
+.badge {
+  position: static !important;
+}
