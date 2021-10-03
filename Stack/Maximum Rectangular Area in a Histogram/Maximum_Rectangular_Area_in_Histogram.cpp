@@ -46,7 +46,7 @@ int main()
    long long arr[n];
    for(long long i=0;i<n;i++)
       cin>>arr[i];
-   long long ans=getMaxArea(arr,n);
-	cout<<ans;
-    return 0;
+   
+   cout<<getMaxArea(arr,n)<<endl;;
+   return 0;
 }
