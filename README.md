@@ -27,7 +27,7 @@ To contribute to this repository:
 
     - a `README.md` describing the problem and if possible, its explanation.
 
-    - a solution file in as many programming languages as possible.
+    - a solution file with the name `main.<lang>`, where `<lang>` is the extension for the language, in as many programming languages as possible.
 
     ![image](https://cdn.discordapp.com/attachments/893592024320716842/893593257123139594/unknown.png)
     *(demo folder structure)*
