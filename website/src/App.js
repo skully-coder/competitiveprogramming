@@ -46,7 +46,9 @@ export default function App() {
 						CP
 					</NavLink>
 					<div className="navbar-nav">
-						<NavLink activeClassName="active" className="nav-link" to="/categories/">Categories</NavLink>
+						<NavLink activeClassName="active" className="nav-item" to="/categories/">
+							<span className="nav-link">Categories</span>
+						</NavLink>
 					</div>
 					<div className="navbar-content ml-auto">
 						<button className="btn btn-action" type="button" onClick={halfmoon.toggleDarkMode.bind(halfmoon)}>
@@ -71,6 +73,18 @@ export default function App() {
 
 				{/* Navbar fixed bottom start */}
 				<nav className="navbar navbar-fixed-bottom">
+					<div className="d-md-none">
+						<img className="mr-5" src="https://img.shields.io/github/contributors/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Contributers" />
+						<img className="mr-5" src="https://img.shields.io/github/forks/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Forks" />
+						<img className="mr-5" src="https://img.shields.io/github/issues/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Issues" />
+						<img className="mr-5" src="https://img.shields.io/github/stars/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Stargazers" />
+					</div>
+					<div className="d-none d-md-block">
+						<img className="mx-5" src="https://img.shields.io/github/contributors/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Contributers" />
+						<img className="mx-5" src="https://img.shields.io/github/forks/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Forks" />
+						<img className="mx-5" src="https://img.shields.io/github/issues/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Issues" />
+						<img className="mx-5" src="https://img.shields.io/github/stars/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Stargazers" />
+					</div>
 				</nav>
 				{/* Navbar fixed bottom end */}
 			</div>

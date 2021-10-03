@@ -13,7 +13,7 @@ export default function Category(props) {
 	return (
 		<div className="container text-center">
 			<h2 className="m-10 m-md-20">{props.category}</h2>
-			<div className="table-responsive overflow-auto border mx-auto" style={{ maxHeight: "65vh", width: "90%" }}>
+			<div className="table-responsive overflow-auto shadow-lg mx-auto" style={{ maxHeight: "65vh", width: "90%" }}>
 				<table className="table table-bordered table-hover">
 					<thead className="position-sticky top-0 bg-dark-lm bg-light-dm text-white-lm text-dark-dm">
 						<tr>
