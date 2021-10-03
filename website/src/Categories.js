@@ -11,7 +11,7 @@ export default function Categories(props) {
 				<div className="col-2 d-none d-md-flex flex-md-column h-md-full font-size-16">
 					{props.categories.map((category, index) =>
 						<div className={"flex-fill text-center border" + (index%2 ? " bg-light-lm bg-dark-dm" : "")} key={index}>
-							<NavLink className={"nav-link " + (cat === category ? "text-primary" : "")} to={"/categories/" + category} onClick={() => setCat(category)}>{category}</NavLink>
+							<NavLink className={"nav-link " + (cat === category ? "text-danger font-weight-semi-bold" : "")} to={"/categories/" + category} onClick={() => setCat(category)}>{category}</NavLink>
 						</div>
 					)}
 				</div>
@@ -30,7 +30,7 @@ export default function Categories(props) {
 				<Switch className="col-12 col-md-10">
 					{props.categories.map((category, index) =>
 						<Route path={"/categories/" + category} key={index}>
-							<Category category={category} showCode={props.showCode} />
+							<Category category={category} showCode={props.showCode} setError={props.setError} />
 						</Route>
 					)}
 				</Switch>

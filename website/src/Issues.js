@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import axios from 'axios'
 
-export default function Issues() {
+export default function Issues(props) {
+	const { setError } = props
 	const [ issues, setIssues ] = useState([])
 	useEffect(() => {
-		fetch('https://api.github.com/repos/skully-coder/competitiveprogramming/issues').then(res => res.json())
+		axios.get('https://api.github.com/repos/skully-coder/competitiveprogramming/issues')
 		.then(response => {
-			response.forEach(issue => {
+			response.data.forEach(issue => {
 				if(!('pull_request' in issue)) {
 					let labels = []
 					issue.labels.forEach(label => {
@@ -22,7 +24,8 @@ export default function Issues() {
 				}
 			})
 		})
-	}, [])
+		.catch(err => {setError(err.response)})
+	}, [setError])
 	return (
 		<div className="card shadow-lg">
 			<div className="overflow-auto border" style={{ maxHeight: "70vh" }}>

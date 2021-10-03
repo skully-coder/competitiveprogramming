@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandsHelping } from '@fortawesome/free-solid-svg-icons'
+import axios from 'axios'
 
-export default function Contributers() {
+export default function Contributers(props) {
+	const { setError } = props
 	const [ contributors, setContributors ] = useState([])
 	useEffect(() => {
-		fetch('https://api.github.com/repos/skully-coder/competitiveprogramming/contributors').then(res => res.json())
+		axios.get('https://api.github.com/repos/skully-coder/competitiveprogramming/contributors')
 		.then(response => {
-			response.forEach(contributor => {
+			response.data.forEach(contributor => {
 				setContributors(contributors => contributors.concat({
 					login: contributor.login,
 					avatar: contributor.avatar_url,
@@ -16,7 +18,8 @@ export default function Contributers() {
 				}))
 			})
 		})
-	}, [])
+		.catch(err => {setError(err.response)})
+	}, [setError])
 	return (
 		<div className="container-fluid">
 			<div className="row">

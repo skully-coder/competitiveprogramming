@@ -1,65 +1,50 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-error {
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-error {
+		animation: App-error-spin infinite 5s ease-in-out;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-iframe {
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 80%;
-  margin: auto;
+@keyframes App-error-spin {
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(180deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
 
 .dark-mode {
-  color: white !important;
+	color: white !important;
 }
 
-h1 {
-  text-shadow: 1px 1px white, 2px 2px grey;
+.container-fluid h1 {
+	text-shadow: 1px 1px white, 2px 2px grey;
 }
 
 .dark-mode h1 {
-  text-shadow: 1px 1px #25282c, 2px 2px rgb(150, 150, 150) !important;
+	text-shadow: 1px 1px #25282c, 2px 2px rgb(150, 150, 150) !important;
 }
 
 .badge {
-  position: static !important;
+	position: static !important;
 }
