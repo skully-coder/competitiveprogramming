@@ -39,7 +39,6 @@ vector<int> find_anagrams(string a,string b)
 
         if(hash_for_a==hash_for_b)
             start_index.push_back(i-m+1); //i-m+1 gives the starting index of the anagram
-
     }
     return start_index;
 }
@@ -68,8 +67,6 @@ int main()
             }
             cout<<'\n';
         }
-
-
     }
     return 0;
 }
