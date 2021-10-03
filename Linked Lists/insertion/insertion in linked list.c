@@ -13,10 +13,10 @@ int print(struct node* run)
 
 	while(run!=NULL)
 	{
-		printf(" %d ",run->data);
+		printf(" %d-> ",run->data);
 		run=run->next;
 	}
-
+printf("NULL");
 }
 
 
