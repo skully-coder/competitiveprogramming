@@ -12,4 +12,4 @@ assignees: ''
 
 ## Bug location
 <!--- Add a relative location of the bug here -->
-[Bug location](bug-url-here]
+[Bug location](bug-url-here)
