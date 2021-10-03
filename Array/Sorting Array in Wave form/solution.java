@@ -2,7 +2,7 @@
 // an array in wave form.
 import java.util.*;
 
-class SortWave
+class solution
 {
 	// A utility method to swap two numbers.
 	void swap(int arr[], int a, int b)

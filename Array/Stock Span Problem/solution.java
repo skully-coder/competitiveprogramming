@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-class Stockspan {
+class solution {
 	// method to calculate stock span values
 	static void calculateSpan(int price[], int n, int S[])
 	{

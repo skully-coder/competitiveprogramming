@@ -2,7 +2,7 @@
 // problem
 import java.util.*;
 
-class MaxSub {
+class solution {
 
 	// Find the maximum possible sum in arr[]
 	// such that arr[m] is part of it

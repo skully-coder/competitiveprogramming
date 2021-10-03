@@ -1,4 +1,4 @@
-class Solution {
+class solution {
     public int canCompleteCircuit(int[] gas, int[] cost) { 
         int gasCostDiff = 0;
         int n = gas.length;
