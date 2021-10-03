@@ -8,6 +8,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+#include <iostream>
+
 class Solution {
 public:
     ListNode* reverse(ListNode* head)
