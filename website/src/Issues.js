@@ -7,7 +7,7 @@ export default function Issues(props) {
 	const { setError } = props
 	const [ issues, setIssues ] = useState([])
 	useEffect(() => {
-		axios.get('https://api.github.com/repos/skully-coder/competitiveprogramming/issues')
+		axios.get('https://api.github.com/repos/skully-coder/hacktoberfest-competitiveprogramming/issues')
 		.then(response => {
 			response.data.forEach(issue => {
 				if(!('pull_request' in issue)) {
@@ -19,7 +19,7 @@ export default function Issues(props) {
 						title: issue.title,
 						labels: labels,
 						assigned: issue.assignee !== null,
-						link: "https://github.com/skully-coder/competitiveprogramming/issues/" + issue.number,
+						link: "https://github.com/skully-coder/hacktoberfest-competitiveprogramming/issues/" + issue.number,
 					}))
 				}
 			})

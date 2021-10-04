@@ -7,7 +7,7 @@ export default function Category(props) {
 	const { category, setError, showCode } = props
 	const [ problems, setProblems ] = useState([])
 	useEffect(() => {
-		axios.get('https://api.github.com/repos/skully-coder/competitiveprogramming/contents/' + category)
+		axios.get('https://api.github.com/repos/skully-coder/hacktoberfest-competitiveprogramming/contents/' + category)
 		.then(response => {
 			setProblems(response.data)
 		})
@@ -40,16 +40,16 @@ function Problem(props) {
 		<tr>
 			<td>{props.problem.name}</td>
 			<td>
-				<button className="btn btn-success" onClick={() => props.showCode("https://api.github.com/repos/skully-coder/competitiveprogramming/contents/" + props.category + "/" + props.problem.name, false)} data-toggle="modal" data-target="source-code">
+				<button className="btn btn-success" onClick={() => props.showCode("https://api.github.com/repos/skully-coder/hacktoberfest-competitiveprogramming/contents/" + props.category + "/" + props.problem.name, false)} data-toggle="modal" data-target="source-code">
 					<FontAwesomeIcon icon={faCode} />
 				</button>
 			</td>
 			<td>
-				<button className="btn btn-primary" onClick={() => props.showCode("https://api.github.com/repos/skully-coder/competitiveprogramming/contents/" + props.category + "/" + props.problem.name, true)} data-toggle="modal" data-target="readme">
+				<button className="btn btn-primary" onClick={() => props.showCode("https://api.github.com/repos/skully-coder/hacktoberfest-competitiveprogramming/contents/" + props.category + "/" + props.problem.name, true)} data-toggle="modal" data-target="readme">
 					<FontAwesomeIcon icon={faFileAlt} />
 				</button>
 			</td>
-			<td><a target="_blank" rel="noreferrer" className="btn btn-secondary" href={"https://github.com/skully-coder/competitiveprogramming/tree/main/" + props.category + "/" + props.problem.name}><FontAwesomeIcon icon={faExternalLinkAlt} /></a></td>
+			<td><a target="_blank" rel="noreferrer" className="btn btn-secondary" href={"https://github.com/skully-coder/hacktoberfest-competitiveprogramming/tree/main/" + props.category + "/" + props.problem.name}><FontAwesomeIcon icon={faExternalLinkAlt} /></a></td>
 		</tr>
 	)
 }

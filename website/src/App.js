@@ -21,7 +21,7 @@ export default function App() {
 	const [ error, setError ] = useState("")
 	useEffect(() => {
 		halfmoon.onDOMContentLoaded()										// For JS Components to work correctly
-		axios.get('https://api.github.com/repos/skully-coder/competitiveprogramming/contents')
+		axios.get('https://api.github.com/repos/skully-coder/hacktoberfest-competitiveprogramming/contents')
 		.then(response => {
 			response.data.forEach(content => {
 				if(!content.name.startsWith('.') && content.type === "dir") {
@@ -153,16 +153,16 @@ export default function App() {
 					{/* Navbar fixed bottom start */}
 					<nav className="navbar navbar-fixed-bottom">
 						<div className="d-md-none">
-							<img className="mr-5" src="https://img.shields.io/github/contributors/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Contributers" />
-							<img className="mr-5" src="https://img.shields.io/github/forks/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Forks" />
-							<img className="mr-5" src="https://img.shields.io/github/issues/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Issues" />
-							<img className="mr-5" src="https://img.shields.io/github/stars/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Stargazers" />
+							<img className="mr-5" src="https://img.shields.io/github/contributors/skully-coder/hacktoberfest-competitiveprogramming.svg?style=flat-square" alt="Contributers" />
+							<img className="mr-5" src="https://img.shields.io/github/forks/skully-coder/hacktoberfest-competitiveprogramming.svg?style=flat-square" alt="Forks" />
+							<img className="mr-5" src="https://img.shields.io/github/issues/skully-coder/hacktoberfest-competitiveprogramming.svg?style=flat-square" alt="Issues" />
+							<img className="mr-5" src="https://img.shields.io/github/stars/skully-coder/hacktoberfest-competitiveprogramming.svg?style=flat-square" alt="Stargazers" />
 						</div>
 						<div className="d-none d-md-block">
-							<img className="mx-5" src="https://img.shields.io/github/contributors/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Contributers" />
-							<img className="mx-5" src="https://img.shields.io/github/forks/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Forks" />
-							<img className="mx-5" src="https://img.shields.io/github/issues/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Issues" />
-							<img className="mx-5" src="https://img.shields.io/github/stars/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Stargazers" />
+							<img className="mx-5" src="https://img.shields.io/github/contributors/skully-coder/hacktoberfest-competitiveprogramming.svg?style=for-the-badge" alt="Contributers" />
+							<img className="mx-5" src="https://img.shields.io/github/forks/skully-coder/hacktoberfest-competitiveprogramming.svg?style=for-the-badge" alt="Forks" />
+							<img className="mx-5" src="https://img.shields.io/github/issues/skully-coder/hacktoberfest-competitiveprogramming.svg?style=for-the-badge" alt="Issues" />
+							<img className="mx-5" src="https://img.shields.io/github/stars/skully-coder/hacktoberfest-competitiveprogramming.svg?style=for-the-badge" alt="Stargazers" />
 						</div>
 					</nav>
 					{/* Navbar fixed bottom end */}

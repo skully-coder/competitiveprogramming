@@ -7,7 +7,7 @@ export default function Contributers(props) {
 	const { setError } = props
 	const [ contributors, setContributors ] = useState([])
 	useEffect(() => {
-		axios.get('https://api.github.com/repos/skully-coder/competitiveprogramming/contributors')
+		axios.get('https://api.github.com/repos/skully-coder/hacktoberfest-competitiveprogramming/contributors')
 		.then(response => {
 			response.data.forEach(contributor => {
 				setContributors(contributors => contributors.concat({
