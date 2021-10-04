@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// It is function to reverse the array
+
 void reverse(int arr[], int l, int h)
 {
     while (l < h)
@@ -12,8 +14,17 @@ void reverse(int arr[], int l, int h)
 void rotate(int arr[], int n, int k)
 {
     k = k%n;
+
+    // Divide array in two parts
+    // 0 to n-k and n-k to n
+
+    // reverse part 1
     reverse(arr, 0, n - k - 1);
+
+    //reverse part 2
     reverse(arr, n - k, n - 1);
+
+    //now reverse complete array
     reverse(arr, 0, n - 1);
 }
 
