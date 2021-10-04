@@ -10,17 +10,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Result {
-
-    /*
-     * Complete the 'angryProfessor' function below.
-     *
-     * The function is expected to return a STRING.
-     * The function accepts following parameters:
-     *  1. INTEGER k
-     *  2. INTEGER_ARRAY a
-     */
-    
+public class Main {
     /*
      * Solution
      *
@@ -45,10 +35,7 @@ class Result {
         else
             return "NO";
     }
-
-}
-
-public class Solution {
+    
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -67,7 +54,7 @@ public class Solution {
                     .map(Integer::parseInt)
                     .collect(toList());
 
-                String result = Result.angryProfessor(k, a);
+                String result = angryProfessor(k, a);
 
                 bufferedWriter.write(result);
                 bufferedWriter.newLine();
