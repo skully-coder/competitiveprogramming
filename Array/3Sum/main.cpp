@@ -55,7 +55,7 @@ int main()
         {
             cout << j << " ";
         }
-        cout << endl;
+        cout << endl<<endl;
     }
     return 0;
 }
