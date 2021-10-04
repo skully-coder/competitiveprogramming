@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
 	.App-error {
-		animation: App-error-spin infinite 5s ease-in-out;
+		animation: App-error-rotateY infinite 5s ease-in-out;
 	}
 }
 
@@ -21,7 +21,7 @@
 	justify-content: center;
 }
 
-@keyframes App-error-spin {
+@keyframes App-error-rotateY {
 	0% {
 		transform: rotateY(0deg);
 	}
