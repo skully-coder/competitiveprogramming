@@ -40,6 +40,8 @@ To contribute to this repository:
 
 - If you like this repo, do ⭐**star** it, and let others know about this repository :)
 
+- Also our website is now live! It has been made by @Ahti223 . You can find it [here](https://skully-coder.github.io/hacktoberfest-competitiveprogramming/).
+
 *PS: This repository already has the hacktoberfest topic to it, so you guys do not need me to ask to add the `hacktoberfest-accepted` label to the Pull Request, hacktoberfest will consider your Pull Request automatically.*
 
 
