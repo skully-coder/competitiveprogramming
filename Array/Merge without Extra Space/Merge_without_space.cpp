@@ -82,6 +82,3 @@ After Merging
 First Array: 1 2 3 5 8 9 
 Second Array: 10 13 15 20
 */  
-© 2021 GitHub, Inc.
-Terms
-Privacy
