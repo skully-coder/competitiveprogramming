@@ -19,7 +19,8 @@ Please delete options that are not relevant.
 <!-- if you added these files, type 'X' in the square brackets, for example [X] README.md -->
 - [ ] Solution file
 <!-- list the language of the soution file as well -->
-- [ ] README.md
+- [ ] README.md added
+- [ ] README.md already exists
 
 # Checklist:
 
