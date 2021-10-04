@@ -14,13 +14,12 @@ using std::endl;
 
 
 string reversal(string input){
-    
     if (input == "")
     {
         return "";
     }
-
-    return reversal(input.substr(1,input.length()-1)) + input[0];
+    int l = input.length();
+    return reversal(input.substr(1,l-1)) + input[0];
 }
 
 

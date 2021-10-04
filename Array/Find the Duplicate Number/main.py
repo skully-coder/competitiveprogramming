@@ -1,3 +1,4 @@
+
 # LET's take the first test case
 arr=[1,3,3,2]
 
@@ -23,8 +24,8 @@ arr=[1,3,3,2]
 
 # Once we've identified the duplicate, we could just return the duplicate number. However, even though we were not able to meet the problem constraints, we can show that we are mindful of the constraints by restoring the array. This is done by changing all negative numbers to positive.
 
-for i in range(len(arr)):
-    if arr[abs(arr[i])-1]>0:
-        arr[abs(arr[i])-1]=-arr[abs(arr[i])-1]
+for i, arr[i] in enumerate(arr):
+    if arr[abs(arr[i])-1] > 0:
+        arr[abs(arr[i])-1] = -arr[abs(arr[i])-1]
     else:
         print('repeated element in the array is ->', abs(arr[i]))

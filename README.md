@@ -1,42 +1,46 @@
 # Competitive Programming Solutions Compilation
-[![CodeFactor](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming/badge)](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming)  
+[![CodeFactor](https://www.codefactor.io/repository/github/skully-coder/hacktoberfest-competitiveprogramming/badge)](https://www.codefactor.io/repository/github/skully-coder/hacktoberfest-competitiveprogramming)  
 Hello everyone 👋  
 
 This repository contains solutions and explanations to various competitive programming problems, which are important for interviews and online tests of different companies.
 
-Anyone is free to contribute to this repo, please follow the contribution guidelines below 👇
+Anyone is free to contribute to this repository, please follow the contribution guidelines below 👇
+
+Do keep checking the [Discussions](https://github.com/skully-coder/hacktoberfest-competitiveprogramming/discussions) tab to be updated about the events in this repository. Feel free to start a discussion if you wish.
 
 # Guidelines for Contributing 
 
 To contribute to this repository: 
 
-- look through the [issues](https://github.com/skully-coder/competitiveprogramming/issues) tab and find an issue that you feel you can contribute to.
+- Look through the [issues](https://github.com/skully-coder/competitiveprogramming/issues) tab and find an issue that you feel you can contribute to.
 
-- comment on the issue of your choice, and make sure that the issue is assigned to you
+- Comment on the issue of your choice, and make sure that the issue is assigned to you
 
 - Fork this repository.
     ```sh
     git clone https://github.com/skully-coder/competitiveprogramming
     ```
 
-- In the new forked repository created, create a folder with name of the problem under the most suitable topic/tag of the program, like this example:
-![alt text](https://cdn.discordapp.com/attachments/893592024320716842/893592160975343646/unknown.png)
+- In the new forked repository created, create a folder with name of the problem under the most suitable topic/tag of the program, like this example:  
+![alt text](https://cdn.discordapp.com/attachments/893592024320716842/893592160975343646/unknown.png)  
 *(here, **Graph** is the suitable folder, and **Krushal's Minimum Spanning Tree Algorithm** is a folder with the name of the problem)*
 
 - In the folder, provide the following:-
 
     - a `README.md` describing the problem and if possible, its explanation.
 
-    - a solution file in as many programming languages as possible.
+    - a solution file with the name `main.<lang>`, where `<lang>` is the extension for the language, in as many programming languages as possible.
 
     ![image](https://cdn.discordapp.com/attachments/893592024320716842/893593257123139594/unknown.png)
     *(demo folder structure)*
 
 - Once you are done, `commit` the changes and `push` to your fork. 
 
-- Now go ahead create a pull request with an appropriate heading, which will be reviewed by us as soon as possible. If acceptable, your pull request will be merged into the repository, and you will be able to se your name in the list of contributors [here](https://github.com/skully-coder/competitiveprogramming/graphs/contributors)
+- Now go ahead create a pull request with an appropriate heading, which will be reviewed by us as soon as possible. If acceptable, your pull request will be merged into the repository, and you will be able to see your name in the list of contributors [here](https://github.com/skully-coder/competitiveprogramming/graphs/contributors)
 
 - If you like this repo, do ⭐**star** it, and let others know about this repository :)
+
+*PS: This repository already has the hacktoberfest topic to it, so you guys do not need me to ask to add the `hacktoberfest-accepted` label to the Pull Request, hacktoberfest will consider your Pull Request automatically.*
 
 
 ## Stargazers over time
