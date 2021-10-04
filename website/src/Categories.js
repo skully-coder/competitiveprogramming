@@ -21,15 +21,15 @@ export default function Categories(props) {
 	}, [setError])
 	return (
 		<Router>
-			<div className="row h-md-full">
-				<div className="col-2 d-none d-md-flex flex-md-column h-md-full font-size-16">
+			<div className="row h-full">
+				<div className="col-2 d-none d-md-flex flex-md-column h-full font-weight-semi-bold">
 					{categories.map((category, index) =>
 						<div className={"flex-fill text-center border" + (index%2 ? " bg-light-lm bg-dark-dm" : "")} key={index}>
-							<NavLink className={"nav-link " + (cat === category.name ? "text-danger font-weight-semi-bold" : "")} to={"/categories/" + category.name} onClick={() => setCat(category.name)}>{category.name}</NavLink>
+							<NavLink className={"nav-link " + (cat === category.name ? "text-danger" : "")} to={"/categories/" + category.name} onClick={() => setCat(category.name)}>{category.name}</NavLink>
 						</div>
 					)}
 				</div>
-				<div className="col-12 d-md-none text-center py-10">
+				<div className="col-12 d-md-none text-center pt-10">
 					<div className="dropdown">
 						<button className="btn btn-success" data-toggle="dropdown" type="button" id="dropdown-categories" aria-haspopup="true" aria-expanded="false">
 							View Categories
@@ -41,7 +41,7 @@ export default function Categories(props) {
 						</div>
 					</div>
 				</div>
-				<Switch className="col-12 col-md-10">
+				<Switch>
 					{categories.map((category, index) =>
 						<Route path={"/categories/" + category.name} key={index}>
 							<Category category={category} showCode={showCode} setError={props.setError} />

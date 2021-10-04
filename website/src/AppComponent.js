@@ -97,11 +97,11 @@ export default function AppComponent(props) {
 
 				{/* Navbar fixed bottom start */}
 				<nav className="navbar navbar-fixed-bottom">
-					<div className="d-md-none">
-						<img className="mr-5" src="https://img.shields.io/github/contributors/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Contributers" />
-						<img className="mr-5" src="https://img.shields.io/github/forks/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Forks" />
-						<img className="mr-5" src="https://img.shields.io/github/issues/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Issues" />
-						<img className="mr-5" src="https://img.shields.io/github/stars/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Stargazers" />
+					<div className="d-flex d-md-none justify-content-around w-full">
+						<img className="" src="https://img.shields.io/github/contributors/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Contributers" />
+						<img className="" src="https://img.shields.io/github/forks/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Forks" />
+						<img className="" src="https://img.shields.io/github/issues/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Issues" />
+						<img className="" src="https://img.shields.io/github/stars/skully-coder/competitiveprogramming.svg?style=flat-square" alt="Stargazers" />
 					</div>
 					<div className="d-none d-md-block">
 						<img className="mx-5" src="https://img.shields.io/github/contributors/skully-coder/competitiveprogramming.svg?style=for-the-badge" alt="Contributers" />

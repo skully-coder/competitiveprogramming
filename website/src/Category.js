@@ -29,22 +29,24 @@ export default function Category(props) {
 		.catch(err => {setError(err.response)})
 	}, [category.url, setError])
 	return (
-		<div className="container text-center">
-			<h2 className="m-10 m-md-20">{category.name}</h2>
-			<div className="table-responsive overflow-auto shadow-lg mx-auto" style={{ maxHeight: "65vh" }}>
-				<table className="table table-bordered table-hover">
-					<thead className="position-sticky top-0 bg-dark-lm bg-light-dm text-white-lm text-dark-dm">
-						<tr>
-							<th>Problem</th>
-							<th>View Code</th>
-							<th>View README</th>
-							<th>Visit Github</th>
-						</tr>
-					</thead>
-					<tbody>
-						{Object.entries(problems).map(([title, data], index) => <Problem key={index} title={title} data={data} category={category.name} showCode={showCode} />)}
-					</tbody>
-				</table>
+		<div className="col-12 col-md-10">
+			<div className="container text-center">
+				<h2 className="m-5 m-md-20">{category.name}</h2>
+				<div className="table-responsive overflow-auto shadow-lg mx-auto" style={{ maxHeight: "65vh", width: "90%" }}>
+					<table className="table table-bordered table-hover">
+						<thead className="position-sticky top-0 bg-dark-lm bg-light-dm text-white-lm text-dark-dm">
+							<tr>
+								<th>Problem</th>
+								<th>View Code</th>
+								<th>View README</th>
+								<th>Visit Github</th>
+							</tr>
+						</thead>
+						<tbody>
+							{Object.entries(problems).map(([title, data], index) => <Problem key={index} title={title} data={data} category={category.name} showCode={showCode} />)}
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	)
