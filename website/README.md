@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Website for Competitive Programming
+
+This is the React JS folder for repo's website.
+
+Development Server can be launched by following steps (Requires NodeJS and NPM):
+
+<ol>
+	<li>Clone the repo</li>
+	<li>In a Terminal/PS, Browse to current directory `website`</li>
+	<li>Run `npm install`</li>
+	<li>Run `npm start`</li>
+	<li>Website will be available at `localhost:3000`</li>
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
