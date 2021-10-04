@@ -1,0 +1,3 @@
+You are given two positive integers 𝑛 and 𝑠. Find the maximum possible median of an array of 𝑛 non-negative integers (not necessarily distinct), such that the sum of its elements is equal to 𝑠.
+
+A median of an array of integers of length 𝑚 is the number standing on the ⌈𝑚2⌉-th (rounding up) position in the non-decreasing ordering of its elements. Positions are numbered starting from 1. For example, a median of the array [20,40,20,50,50,30] is the ⌈𝑚2⌉-th element of [20,20,30,40,50,50], so it is 30. There exist other definitions of the median, but in this problem we use the described definition.
