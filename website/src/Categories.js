@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, NavLink, useLocation } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, NavLink, useLocation } from "react-router-dom";
 import axios from 'axios'
 import Category from "./Category";
 
