@@ -19,3 +19,11 @@ ArrayN = { 1, 1 }
 ArrayM = { 2, 4 }
 Output: After merging the two linked lists, we have merged list as 1 1 2 4
 
+# Explanation / Solution
+
+- Detecting which is the starting point of the new sorted merged list i.e., the one with minimum value of the first element of both the list.
+- Running loop untill any one of the head node reaches its end of list.
+- Detecting which head node has reached the end and prospectively chossing the other head and iterating till the end of list and adding to the head->next pointer link.
+- returning the new head.
+
+
