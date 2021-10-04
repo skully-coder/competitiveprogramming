@@ -33,3 +33,7 @@ Add found denomination to result. Subtract value of found denomination from amou
 If amount becomes 0, then print result.
 
 Else repeat steps 3 and 4 for new value of V.
+
+# Note:The above approach may not work for all denominations. For example, it doesn’t work for denominations {9, 6, 5, 1} and V = 11. The above approach would print 9, 1 and 1. But we can use 2 denominations 5 and 6. 
+For general input, below dynamic programming approach can be used: 
+https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
