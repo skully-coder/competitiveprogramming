@@ -17,7 +17,7 @@ int main()
 	printf("enter your choice:\n");
 	while(1)
 	{
-	    printf("-------------------------------------")
+	    printf("-------------------------------------");
 		printf("1:inert at end\n2:traverse\n3:sorting\n4:delete at begin\n5:exit\n");
 		scanf("%d",&ch);
 		switch(ch)
