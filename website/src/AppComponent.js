@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faAdjust, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import halfmoon from 'halfmoon/js/halfmoon-module'
 import Home from './Home'
 import Categories from './Categories'
