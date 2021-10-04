@@ -17,9 +17,6 @@ To contribute to this repository:
 - Comment on the issue of your choice, and make sure that the issue is assigned to you
 
 - Fork this repository.
-    ```sh
-    git clone https://github.com/skully-coder/competitiveprogramming
-    ```
 
 - In the new forked repository created, create a folder with name of the problem under the most suitable topic/tag of the program, like this example:  
 ![alt text](https://cdn.discordapp.com/attachments/893592024320716842/893592160975343646/unknown.png)  
