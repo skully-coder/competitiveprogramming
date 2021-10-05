@@ -4,7 +4,9 @@ Hello everyone 👋
 
 This repository contains solutions and explanations to various competitive programming problems, which are important for interviews and online tests of different companies.
 
-Anyone is free to contribute to this repo, please follow the contribution guidelines below 👇
+Anyone is free to contribute to this repository, please follow the contribution guidelines below 👇
+
+Do keep checking the [Discussions](https://github.com/skully-coder/hacktoberfest-competitiveprogramming/discussions) tab to be updated about the events in this repository. Feel free to start a discussion if you wish.
 
 # Guidelines for Contributing 
 
@@ -15,9 +17,6 @@ To contribute to this repository:
 - Comment on the issue of your choice, and make sure that the issue is assigned to you
 
 - Fork this repository.
-    ```sh
-    git clone https://github.com/skully-coder/competitiveprogramming
-    ```
 
 - In the new forked repository created, create a folder with name of the problem under the most suitable topic/tag of the program, like this example:  
 ![alt text](https://cdn.discordapp.com/attachments/893592024320716842/893592160975343646/unknown.png)  
@@ -37,6 +36,10 @@ To contribute to this repository:
 - Now go ahead create a pull request with an appropriate heading, which will be reviewed by us as soon as possible. If acceptable, your pull request will be merged into the repository, and you will be able to see your name in the list of contributors [here](https://github.com/skully-coder/competitiveprogramming/graphs/contributors)
 
 - If you like this repo, do ⭐**star** it, and let others know about this repository :)
+
+- Also our website is now live! It has been made by @Ahti223 . You can find it [here](https://skully-coder.github.io/hacktoberfest-competitiveprogramming/).
+
+*PS: This repository already has the hacktoberfest topic to it, so you guys do not need me to ask to add the `hacktoberfest-accepted` label to the Pull Request, hacktoberfest will consider your Pull Request automatically.*
 
 
 ## Stargazers over time
