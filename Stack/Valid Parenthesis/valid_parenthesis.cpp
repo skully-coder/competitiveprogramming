@@ -4,10 +4,10 @@ using namespace std;
 class Solution
 {
 public:
-    bool isValid(string s)
+    bool isParenthesisValid(string s)
     {
-
         stack<int> stk;
+
         for (auto ch : s)
         {
             if (ch == '(' or ch == '[' or ch == '{')
@@ -62,7 +62,7 @@ int main()
     string s;
     cin >> s;
     Solution *obj = new Solution;
-    bool valid = obj->isValid(s);
+    bool valid = obj->isParenthesisValid(s);
     if (valid)
         cout << "Valid" << '\n';
     else
