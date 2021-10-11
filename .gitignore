@@ -1,3 +1,4 @@
 .vscode
-.*.exe
+a.exe
+main.exe
 .DS_Store
