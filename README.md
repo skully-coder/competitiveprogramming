@@ -1,5 +1,5 @@
 # Competitive Programming Solutions Compilation
-[![CodeFactor](https://www.codefactor.io/repository/github/skully-coder/hacktoberfest-competitiveprogramming/badge)](https://www.codefactor.io/repository/github/skully-coder/hacktoberfest-competitiveprogramming)  
+[![CodeFactor](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming/badge)](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming)  
 Hello everyone 👋  
 
 This repository contains solutions and explanations to various competitive programming problems, which are important for interviews and online tests of different companies.
