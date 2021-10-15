@@ -6,7 +6,7 @@ This repository contains solutions and explanations to various competitive progr
 
 Anyone is free to contribute to this repository, please follow the contribution guidelines below 👇
 
-Do keep checking the [Discussions](https://github.com/skully-coder/hacktoberfest-competitiveprogramming/discussions) tab to be updated about the events in this repository. Feel free to start a discussion if you wish.
+Do keep checking the [Discussions](https://github.com/skully-coder/competitiveprogramming/discussions) tab to be updated about the events in this repository. Feel free to start a discussion if you wish.
 
 # Guidelines for Contributing 
 
@@ -37,7 +37,7 @@ To contribute to this repository:
 
 - If you like this repo, do ⭐**star** it, and let others know about this repository :)
 
-- Also our website is now live! It has been made by @Ahti223 . You can find it [here](https://skully-coder.github.io/hacktoberfest-competitiveprogramming/).
+- Also our website is now live! It has been made by @Ahti223 . You can find it [here](https://skully-coder.github.io/competitiveprogramming/).
 
 *PS: This repo has been excluded from Hacktobestfest for being a DSA related repository, so any Pull Request to this repository will not longer be considered for Hacktoberfest.*
 
