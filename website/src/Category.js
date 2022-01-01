@@ -1,12 +1,30 @@
 import './App.css';
-import { useEffect, useState } from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt, faFileAlt, faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faCuttlefish, faJava, faJsSquare, faPython } from '@fortawesome/free-brands-svg-icons'
+import {
+    useEffect,
+    useState
+} from "react"
+import {
+    FontAwesomeIcon
+} from '@fortawesome/react-fontawesome'
+import {
+    faExternalLinkAlt,
+    faFileAlt,
+    faPlus
+} from '@fortawesome/free-solid-svg-icons'
+import {
+    faCuttlefish,
+    faJava,
+    faJsSquare,
+    faPython
+} from '@fortawesome/free-brands-svg-icons'
 import axios from 'axios'
 
 export default function Category(props) {
-    const { category, setError, showCode } = props
+    const {
+        category,
+        setError,
+        showCode
+    } = props
     const [problems, setProblems] = useState([])
     useEffect(() => {
         axios.get(category.url + "?recursive=1")
@@ -27,17 +45,23 @@ export default function Category(props) {
                 }, {})
                 setProblems(problems)
             })
-            .catch(err => { setError(err.response) })
+            .catch(err => {
+                setError(err.response)
+            })
     }, [category.url, setError])
-    return ( <
-            div className = "col-12 col-md-10" >
+    return ( < div className = "col-12 col-md-10" >
             <
             div className = "container text-center" >
             <
-            h2 className = "m-5 m-md-20" > { category.name } < /h2> <
+            h2 className = "m-5 m-md-20" > {
+                category.name
+            } < /h2>  <
             div className = "table-responsive overflow-auto shadow-lg mx-auto"
             style = {
-                { maxHeight: "65vh", width: "90%" }
+                {
+                    maxHeight: "65vh",
+                    width: "90%"
+                }
             } >
             <
             table className = "table table-bordered table-hover" >
@@ -46,18 +70,24 @@ export default function Category(props) {
             <
             tr >
             <
-            th > Problem < /th> <
-            th > View Code < /th> <
-            th > View README < /th> <
-            th > Visit Github < /th> < /
-            tr > <
-            /thead> <
+            th > Problem < /th> <th > View Code < /th > < th > View README < /th> <th > Visit Github < /th > < /tr > < /
+            thead > <
             tbody > {
-                Object.entries(problems).map(([title, data], index) => < Problem key = { index }
-                    title = { title }
-                    data = { data }
-                    category = { category.name }
-                    showCode = { showCode }
+                Object.entries(problems).map(([title, data], index) => < Problem key = {
+                        index
+                    }
+                    title = {
+                        title
+                    }
+                    data = {
+                        data
+                    }
+                    category = {
+                        category.name
+                    }
+                    showCode = {
+                        showCode
+                    }
                     />)} < /
                     tbody > <
                     /table> < /
@@ -71,50 +101,72 @@ export default function Category(props) {
                 const icons = (language) => {
                     switch (language) {
                         case "c":
-                            return <FontAwesomeIcon icon = { faCuttlefish }
+                            return <FontAwesomeIcon icon = {
+                                faCuttlefish
+                            }
                             />
                         case "cpp":
                             return <span >
                                 <
-                                FontAwesomeIcon icon = { faCuttlefish }
+                                FontAwesomeIcon icon = {
+                                    faCuttlefish
+                                }
                             /> <
-                            FontAwesomeIcon icon = { faPlus }
+                            FontAwesomeIcon icon = {
+                                faPlus
+                            }
                             size = "xs" / >
                                 <
-                                FontAwesomeIcon icon = { faPlus }
+                                FontAwesomeIcon icon = {
+                                    faPlus
+                                }
                             size = "xs" / >
                                 <
                                 /span>
                         case "java":
                             return <FontAwesomeIcon className = "font-size-22"
-                            icon = { faJava }
+                            icon = {
+                                faJava
+                            }
                             />
                         case "py":
                             return <FontAwesomeIcon className = "font-size-18"
-                            icon = { faPython }
+                            icon = {
+                                faPython
+                            }
                             />
                         case "js":
                             return <FontAwesomeIcon className = "font-size-18"
-                            icon = { faJsSquare }
+                            icon = {
+                                faJsSquare
+                            }
                             />
                         default:
-                            return <span > { language } < /span>
+                            return <span > {
+                                language
+                            } < /span>
                     }
                 }
                 return ( <
                     tr >
                     <
-                    td > { props.title } < /td> <
+                    td > {
+                        props.title
+                    } < /td> <
                     td > {
                         Object.keys(props.data).map((value, index) => value === "readme" ? null :
                             <
-                            button key = { index }
+                            button key = {
+                                index
+                            }
                             data - toggle = "modal"
                             data - target = "source-code"
                             className = "btn btn-success font-weight-semi-bold mr-5 px-10"
                             onClick = {
                                 () => props.showCode(props.data[value], true)
-                            } > { icons(value) } <
+                            } > {
+                                icons(value)
+                            } <
                             /button>
                         )
                     } <
@@ -128,7 +180,9 @@ export default function Category(props) {
                     data - toggle = "modal"
                     data - target = "readme" >
                     <
-                    FontAwesomeIcon icon = { faFileAlt }
+                    FontAwesomeIcon icon = {
+                        faFileAlt
+                    }
                     /> < /
                     button > <
                     /td> <
@@ -137,9 +191,13 @@ export default function Category(props) {
                     a target = "_blank"
                     rel = "noreferrer"
                     className = "btn btn-secondary"
-                    href = { "https://github.com/skully-coder/competitiveprogramming/tree/main/" + props.category + "/" + props.title } >
+                    href = {
+                        "https://github.com/skully-coder/competitiveprogramming/tree/main/" + props.category + "/" + props.title
+                    } >
                     <
-                    FontAwesomeIcon icon = { faExternalLinkAlt }
+                    FontAwesomeIcon icon = {
+                        faExternalLinkAlt
+                    }
                     /> < /
                     a > <
                     /td> < /
