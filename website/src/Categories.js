@@ -12,7 +12,7 @@ export default function Categories(props) {
 		axios.get('https://api.github.com/repos/skully-coder/competitiveprogramming/contents')
 		.then(response => {
 			response.data.forEach(content => {
-				if(content.name !== "website" && !content.name.startsWith('.') && content.type === "dir") {
+				if(!content.name.startsWith('.') && content.type === "dir") {
 					setCategories(categories => categories.concat({ name: content.name, url: content.git_url }))
 				}
 			})
