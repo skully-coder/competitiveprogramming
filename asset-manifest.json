@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/hacktoberfest-competitiveprogramming/static/css/main.38c99861.chunk.css",
-    "main.js": "/hacktoberfest-competitiveprogramming/static/js/main.52511471.chunk.js",
-    "main.js.map": "/hacktoberfest-competitiveprogramming/static/js/main.52511471.chunk.js.map",
-    "runtime-main.js": "/hacktoberfest-competitiveprogramming/static/js/runtime-main.8b5c4558.js",
-    "runtime-main.js.map": "/hacktoberfest-competitiveprogramming/static/js/runtime-main.8b5c4558.js.map",
-    "static/css/2.cca31f24.chunk.css": "/hacktoberfest-competitiveprogramming/static/css/2.cca31f24.chunk.css",
-    "static/js/2.85055139.chunk.js": "/hacktoberfest-competitiveprogramming/static/js/2.85055139.chunk.js",
-    "static/js/2.85055139.chunk.js.map": "/hacktoberfest-competitiveprogramming/static/js/2.85055139.chunk.js.map",
-    "static/js/3.3952f916.chunk.js": "/hacktoberfest-competitiveprogramming/static/js/3.3952f916.chunk.js",
-    "static/js/3.3952f916.chunk.js.map": "/hacktoberfest-competitiveprogramming/static/js/3.3952f916.chunk.js.map",
-    "index.html": "/hacktoberfest-competitiveprogramming/index.html",
-    "static/css/2.cca31f24.chunk.css.map": "/hacktoberfest-competitiveprogramming/static/css/2.cca31f24.chunk.css.map",
-    "static/css/main.38c99861.chunk.css.map": "/hacktoberfest-competitiveprogramming/static/css/main.38c99861.chunk.css.map",
-    "static/js/2.85055139.chunk.js.LICENSE.txt": "/hacktoberfest-competitiveprogramming/static/js/2.85055139.chunk.js.LICENSE.txt"
+    "main.css": "/competitiveprogramming/static/css/main.38c99861.chunk.css",
+    "main.js": "/competitiveprogramming/static/js/main.20f623ed.chunk.js",
+    "main.js.map": "/competitiveprogramming/static/js/main.20f623ed.chunk.js.map",
+    "runtime-main.js": "/competitiveprogramming/static/js/runtime-main.3f381848.js",
+    "runtime-main.js.map": "/competitiveprogramming/static/js/runtime-main.3f381848.js.map",
+    "static/css/2.a3c7579e.chunk.css": "/competitiveprogramming/static/css/2.a3c7579e.chunk.css",
+    "static/js/2.ff8cb8ff.chunk.js": "/competitiveprogramming/static/js/2.ff8cb8ff.chunk.js",
+    "static/js/2.ff8cb8ff.chunk.js.map": "/competitiveprogramming/static/js/2.ff8cb8ff.chunk.js.map",
+    "static/js/3.3952f916.chunk.js": "/competitiveprogramming/static/js/3.3952f916.chunk.js",
+    "static/js/3.3952f916.chunk.js.map": "/competitiveprogramming/static/js/3.3952f916.chunk.js.map",
+    "index.html": "/competitiveprogramming/index.html",
+    "static/css/2.a3c7579e.chunk.css.map": "/competitiveprogramming/static/css/2.a3c7579e.chunk.css.map",
+    "static/css/main.38c99861.chunk.css.map": "/competitiveprogramming/static/css/main.38c99861.chunk.css.map",
+    "static/js/2.ff8cb8ff.chunk.js.LICENSE.txt": "/competitiveprogramming/static/js/2.ff8cb8ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b5c4558.js",
-    "static/css/2.cca31f24.chunk.css",
-    "static/js/2.85055139.chunk.js",
+    "static/js/runtime-main.3f381848.js",
+    "static/css/2.a3c7579e.chunk.css",
+    "static/js/2.ff8cb8ff.chunk.js",
     "static/css/main.38c99861.chunk.css",
-    "static/js/main.52511471.chunk.js"
+    "static/js/main.20f623ed.chunk.js"
   ]
 }
