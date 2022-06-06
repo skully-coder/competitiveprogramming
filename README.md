@@ -41,6 +41,12 @@ To contribute to this repository:
 
 *PS: This repo has been excluded from Hacktobestfest for being a DSA related repository, so any Pull Request to this repository will not longer be considered for Hacktoberfest.*
 
+# Setting up in Local Environment
+Just clone the repository on your local machine using the command:
+```
+git clone https://github.com/skully-coder/competitiveprogramming.git
+```
+Now you are set to contribute!
 
 ## Stargazers over time
 
