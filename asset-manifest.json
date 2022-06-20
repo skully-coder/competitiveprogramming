@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/competitiveprogramming/static/css/main.ebba99bb.css",
-    "main.js": "/competitiveprogramming/static/js/main.2c2bb7ff.js",
+    "main.js": "/competitiveprogramming/static/js/main.f7949677.js",
     "static/js/988.cc613119.chunk.js": "/competitiveprogramming/static/js/988.cc613119.chunk.js",
     "index.html": "/competitiveprogramming/index.html",
     "main.ebba99bb.css.map": "/competitiveprogramming/static/css/main.ebba99bb.css.map",
-    "main.2c2bb7ff.js.map": "/competitiveprogramming/static/js/main.2c2bb7ff.js.map",
+    "main.f7949677.js.map": "/competitiveprogramming/static/js/main.f7949677.js.map",
     "988.cc613119.chunk.js.map": "/competitiveprogramming/static/js/988.cc613119.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebba99bb.css",
-    "static/js/main.2c2bb7ff.js"
+    "static/js/main.f7949677.js"
   ]
 }
