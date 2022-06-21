@@ -27,7 +27,7 @@ head = None
 p=head
 for ele in n:
     nnode = LLNode(ele)
-    if head == None:
+    if head is None:
         head = nnode
     else:
         p.link = nnode
