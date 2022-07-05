@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown'
+import rehypeRaw from "rehype-raw"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faAdjust, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { HashRouter as Router, Switch, Route, NavLink } from "react-router-dom";
@@ -27,7 +28,7 @@ export default function AppComponent(props) {
 						<button className="close" aria-label="Close" data-dismiss="modal">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<ReactMarkdown>{props.modalContent}</ReactMarkdown>
+						<ReactMarkdown rehypePlugins={[ rehypeRaw ]}>{props.modalContent}</ReactMarkdown>
 					</div>
 				</div>
 			</div>
