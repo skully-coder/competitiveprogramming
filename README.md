@@ -1,6 +1,7 @@
 # Competitive Programming Solutions Compilation
-[![CodeFactor](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming/badge)](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming)  
-Hello everyone!
+[![CodeFactor](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming/badge)](https://www.codefactor.io/repository/github/skully-coder/competitiveprogramming)
+[![pages-build-deployment](https://github.com/skully-coder/competitiveprogramming/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/skully-coder/competitiveprogramming/actions/workflows/pages/pages-build-deployment)  
+### Hello everyone!
 
 This repository contains solutions and explanations to various competitive programming problems, which are important for interviews and online tests of different companies.
 
