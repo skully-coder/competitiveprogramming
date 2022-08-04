@@ -50,8 +50,8 @@ public:
                 }
                 
             }
-            for(auto x : histogram) cout << x << "\t";
-                cout << endl;
+            // for(auto x : histogram) cout << x << "\t";
+            //     cout << endl;
             // O(n)
             maxArea = max(maxArea, largestRectangleArea(histogram));
             
