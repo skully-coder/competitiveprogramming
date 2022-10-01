@@ -1,6 +1,6 @@
 # Matrix Determinant
 
-The determinant of a matrix is a scalar value that is a function of the entries of a square matrix.
+The determinant of a matrix is a function of the entries of a square matrix.
 
 A Matrix Determinant can be calculated like so:
 
