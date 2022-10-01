@@ -14,5 +14,4 @@ The output should be an integer that is the matrix determinant
 
 1) Create a fuction that takes the matrix as the only argument
 2) Return the determinant for length 1x1 (```matrix[0][0]```) and 2x2 (```(matrix[0][0]*matrix[1][1]) - (matrix[1][0]*matrix[0][1])```) arrays directly
-3) Cycle trough the first row of the array (```x```) and sum/subtract (```x1 - x2 + x3 - x4``` for a length 4 matrix) the product of each value and the determinant of the sub array(```x * determinant of sub array```)
-
+3) Cycle trough the first row of the array (```x``` 1-4 for a length 4 array) and sum/subtract the product of each value and the determinant of the sub array (```x1*determinant - x2*determinant + x3*determinant - x4*determinant``` for a length 4 matrix) and repeat the cycle for the ensuing sub arrays of decreasing length
