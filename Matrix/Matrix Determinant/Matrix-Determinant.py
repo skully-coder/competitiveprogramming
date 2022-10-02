@@ -12,7 +12,7 @@ def determinant(matrix): #Optimized solution
         return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
 
     #for length of matrix > 2
-    for j in range(0, l):
+    for j in range(0, matrix_size):
         # create a sub matrix to find the determinant
         if matrix_size!=2:
             sub_matrix = []               
