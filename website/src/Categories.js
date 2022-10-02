@@ -22,7 +22,7 @@ export default function Categories(props) {
 	return (
 		<Router>
 			<div className="row h-full">
-				<div className="col-2 d-none d-md-flex flex-md-column h-full font-weight-semi-bold">
+				<div className="col-2 d-none d-md-flex flex-md-column h-full font-weight-semi-bold overflow-auto">
 					{categories.map((category, index) =>
 						<div className={"flex-fill text-center border" + (index%2 ? " bg-light-lm bg-dark-dm" : "")} key={index}>
 							<NavLink className={"nav-link " + (cat === category.name ? "text-danger" : "")} to={"/categories/" + category.name} onClick={() => setCat(category.name)}>{category.name}</NavLink>
