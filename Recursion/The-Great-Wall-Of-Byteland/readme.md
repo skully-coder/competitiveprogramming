@@ -10,12 +10,14 @@ The height of the wall is fixed and is 2 units, but the length of the wall varie
  
 ### Input format:
 ```
-The first line contains the number of test cases T followed by T lines. Each of the next lines contains an integer N representing the length of the wall. 
+The first line contains the number of test cases T followed by T lines. Each of the next
+lines contains an integer N representing the length of the wall. 
 ```
 
 ### Output format:
 ```
-Print T lines one for each test case, containing an integer that represents the number of ways of constructing the wall, modulo 1000000007. 
+Print T lines one for each test case, containing an integer that represents the
+number of ways of constructing the wall, modulo 1000000007. 
 ```
 
 ### Constraints:
