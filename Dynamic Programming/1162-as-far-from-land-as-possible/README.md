@@ -6,7 +6,7 @@ The distance used in this problem is the Manhattan distance: the distance betwe
 
 Example 1:
 
-[https://assets.leetcode.com/uploads/2019/05/03/1336_ex1.JPG]
+![https://assets.leetcode.com/uploads/2019/05/03/1336_ex1.JPG](https://assets.leetcode.com/uploads/2019/05/03/1336_ex1.JPG)
 
 
 Input: grid = [[1,0,1],[0,0,0],[1,0,1]]
@@ -16,7 +16,7 @@ Explanation: The cell (1, 1) is as far as possible from all the land with distan
 
 Example 2:
 
-[https://assets.leetcode.com/uploads/2019/05/03/1336_ex2.JPG]
+![https://assets.leetcode.com/uploads/2019/05/03/1336_ex2.JPG](https://assets.leetcode.com/uploads/2019/05/03/1336_ex2.JPG)
 
 
 Input: grid = [[1,0,0],[0,0,0],[0,0,0]]
